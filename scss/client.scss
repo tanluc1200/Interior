@@ -1,0 +1,39 @@
+.client {
+    padding-block: 100rem;
+    background-color: var(--black);
+    .row {
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    .title {
+        margin-inline: auto;
+        position: relative;
+        width: 570px;
+        color: var(--white);
+        .sticky-1 {
+            position: absolute;
+            bottom: 100%;
+            right: 100%;
+        }
+    }
+    .desc {
+        position: relative;
+        width: 570px;
+        color: var(--gray-white);
+        margin-inline: auto;
+        .sticky-2 {
+            position: absolute;
+            left: 100%;
+            bottom: 100%;
+        }
+    }
+    .image {
+        margin-top: 114px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        column-gap: 100px;
+        row-gap: 60px;
+    }
+}

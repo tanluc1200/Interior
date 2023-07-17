@@ -1,0 +1,36 @@
+.service {
+    background: var(--white);
+    padding: 100px 0;
+    &-title {
+        text-align: center;
+        margin-bottom: 60px;
+        .desc {
+            max-width: 770px;
+            margin-inline: auto;
+            margin-top: 24px;
+        }
+    }
+    &-content {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        gap: 28px 80px;
+        .box {
+            text-align: center;
+            h3 {
+                color: var(--black, #22201f);
+                font-size: 36px;
+                font-weight: 500;
+                line-height: 133.333%;
+                letter-spacing: -0.72px;
+                margin-block: 51px 18px;
+            }
+            span {
+                color: var(--white-gray-2, #828282);
+                font-size: 20px;
+                font-weight: 400;
+                line-height: 34px; /* 170% */
+                letter-spacing: -0.4px;
+            }
+        }
+    }
+}

@@ -1,0 +1,77 @@
+.hero {
+    background: var(--bg-body);
+    // margin-top: -200px;
+    // transition: 500ms;
+    padding-block: 63rem 99px;
+    &.active {
+        margin-top: 0;
+    }
+    .title {
+        position: relative;
+        margin-bottom: 46px;
+        color: var(--black);
+        font-size: 136px;
+        font-weight: 700;
+        line-height: 104.412%;
+        letter-spacing: -5.44rem;
+        .highlight {
+            display: inline-block;
+            width: 351px;
+            height: 99px;
+            border-radius: 49.5px;
+            border: 2px solid var(--color-3, #744b35);
+        }
+        .sticky-1 {
+            position: absolute;
+            left: -30px;
+            top: -30px;
+        }
+        .sticky-2 {
+            position: absolute;
+            left: 50.5%;
+            top: -30px;
+        }
+        .sticky-3 {
+            position: absolute;
+            right: 60px;
+            top: 50%;
+        }
+        .sticky-4 {
+            position: absolute;
+            right: 100%;
+            top: 100%;
+        }
+    }
+    .row {
+        justify-content: space-between;
+        flex-wrap: wrap;
+        row-gap: 28px;
+    }
+    .desc {
+        width: 601px;
+    }
+    &-content {
+        margin-top: 90px;
+        display: flex;
+        align-items: start;
+        gap: 30px 114px;
+        flex-wrap: wrap;
+    }
+    &-pic-left {
+        display: flex;
+        column-gap: 30px;
+        flex: 1 1 486px;
+        img {
+            width: calc(50% - 15px);
+        }
+    }
+    &-pic-right {
+        flex: 1 1 570px;
+        img {
+            width: 100%;
+        }
+    }
+}
+// #menu:checked + .hero {
+//     margin-top: 0px;
+// }
